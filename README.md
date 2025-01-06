@@ -9,7 +9,7 @@ Implementation of AAAI'25 paper *Sparis: Neural Implicit Surface Reconstruction 
 
 ## Overview
 
-![](./media/overview.png)
+<div align=center>  <img src="./media/overview.png" width=100%> </div>
 
 In this paper, we propose a new method, named Sparis, for indoor surface reconstruction from sparse views. Specifically, we investigate the impact of monocular priors on sparse scene reconstruction, introducing a novel prior based on inter-image matching information. Our prior offers more accurate depth information while ensuring cross-view matching consistency.
 
