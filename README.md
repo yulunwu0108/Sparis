@@ -28,6 +28,15 @@
 
 In this paper, we propose a new method, named Sparis, for indoor surface reconstruction from sparse views. Specifically, we investigate the impact of monocular priors on sparse scene reconstruction, introducing a novel prior based on inter-image matching information. Our prior offers more accurate depth information while ensuring cross-view matching consistency.
 
+## Installation
+
+```
+conda create -n sparis python=3.8
+conda activate sparis
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install -r requirements.txt
+```
+
 ## Citation
 
 If you find our work useful in your research, please consider citing:
@@ -40,3 +49,7 @@ If you find our work useful in your research, please consider citing:
     year={2025}
 }
 ```
+
+## Acknowledgement
+
+This implementation is built upon [MonoSDF](https://github.com/autonomousvision/monosdf). Thanks to the authors for their great work.
