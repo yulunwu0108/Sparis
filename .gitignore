@@ -146,18 +146,18 @@ code/.idea/
 ._.DS_Store
 .idea/
 
-*.png
-*.ply
-*.txt
-*.jpg
-*.npy
-*.npz
-*.tar
+# *.png
+# *.ply
+# *.txt
+# *.jpg
+# *.npy
+# *.npz
+# *.tar
 uploadtnt_*/
 
-*.json
-*.csv
+# *.json
+# *.csv
 dtu_eval/Offical_DTU_Dataset/
-media/
+# media/
 pretrained_models/
 meshes/
