@@ -18,10 +18,6 @@
   <a href="https://yulunwu0108.github.io/Sparis/" target='_blank'><img src="http://img.shields.io/badge/Project_Page-🛋-lightblue"></a>
 </p>
 
-## TODO
-
-- [ ] Code release
-
 ## Overview
 
 <div align=center>  <img src="./media/overview.png" width=100%> </div>
