@@ -33,6 +33,10 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url http
 pip install -r requirements.txt
 ```
 
+## Dataset
+
+You can download the sparse-view ScanNet and Replica dataset from [this link](https://drive.google.com/drive/folders/1--wL0eyq7QpA-Wzh4KKivrgZfZ3eRm7r?usp=sharing).
+
 ## Citation
 
 If you find our work useful in your research, please consider citing:
