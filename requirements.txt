@@ -8,3 +8,5 @@ tensorboard
 scipy
 numpy
 kornia
+cachetools
+ninja
