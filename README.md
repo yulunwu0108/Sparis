@@ -26,7 +26,7 @@ In this paper, we propose a new method, named Sparis, for indoor surface reconst
 
 ## Installation
 
-```
+```bash
 conda create -n sparis python=3.8
 conda activate sparis
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
@@ -35,7 +35,36 @@ pip install -r requirements.txt
 
 ## Dataset
 
-You can download the sparse-view ScanNet and Replica dataset from [this link](https://drive.google.com/drive/folders/1--wL0eyq7QpA-Wzh4KKivrgZfZ3eRm7r?usp=sharing).
+You can download the sparse-view ScanNet and Replica dataset from [this link](https://drive.google.com/drive/folders/1--wL0eyq7QpA-Wzh4KKivrgZfZ3eRm7r?usp=sharing) and put them in the `./data` directory. The data structure should be like:
+
+```
+|-- code
+|-- data
+    |-- ScanNet
+        |-- <scan_name, e.g., scan710>
+            |-- cameras.npz
+            |-- 000000_depth.npy
+            |-- 000000_normal.npy
+            |-- 000000_rgb.png
+            ...
+            |-- match_roma
+                |-- match_dict_0.npz
+                ...
+    |-- Replica
+    ...
+```
+
+## Training
+
+```bash
+cd code
+
+# ScanNet
+CUDA_VISIBLE_DEVICES=0 python training/exp_runner.py --conf confs/scannet_mlp.conf --scan_id <scan_id, e.g., 710>
+
+# Replica
+CUDA_VISIBLE_DEVICES=0 python training/exp_runner.py --conf confs/replica_mlp_new.conf --scan_id <scan_id, e.g., 1>
+```
 
 ## Citation
 
