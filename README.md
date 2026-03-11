@@ -63,7 +63,7 @@ cd code
 CUDA_VISIBLE_DEVICES=0 python training/exp_runner.py --conf confs/scannet_mlp.conf --scan_id <scan_id, e.g., 710>
 
 # Replica
-CUDA_VISIBLE_DEVICES=0 python training/exp_runner.py --conf confs/replica_mlp_new.conf --scan_id <scan_id, e.g., 1>
+CUDA_VISIBLE_DEVICES=0 python training/exp_runner.py --conf confs/replica_mlp.conf --scan_id <scan_id, e.g., 1>
 ```
 
 ## Citation
